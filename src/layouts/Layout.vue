@@ -1,7 +1,7 @@
 <template>
   <v-app id="inspire">
     <Header v-model="expandOnHover"></Header>
-    <Sidebar :expand-on-hover.sync="expandOnHover"></Sidebar>
+    <!-- <Sidebar :expand-on-hover.sync="expandOnHover"></Sidebar> -->
     <v-content>
       <v-container class="fill-height" fluid>
         <router-view />
@@ -14,7 +14,7 @@
 
 <script>
 import Header from "./header/Header";
-import Sidebar from "./sidebar/Sidebar";
+// import Sidebar from "./sidebar/Sidebar";
 import Footer from "./footer/Footer";
 import { mapState, mapMutations } from "vuex";
 export default {
@@ -22,7 +22,7 @@ export default {
 
   components: {
     Header,
-    Sidebar,
+    // Sidebar,
     Footer
   },
 

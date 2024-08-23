@@ -23,8 +23,6 @@
           <v-list-item-subtitle class="caption">Software Developer</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
-      <!---USer Area -->
-      <!---Sidebar Items -->
       <v-list-item
         v-for="item in items"
         :key="item.title"
@@ -33,7 +31,7 @@
         link
       >
         <v-list-item-icon>
-          <v-icon>{{ item.icon }}</v-icon>
+          <component :is="item.iconComponent" />
         </v-list-item-icon>
 
         <v-list-item-content>
@@ -47,9 +45,13 @@
 
 <script>
 import { mapState } from "vuex";
+import WorkshopIcon from '@/assets/modules/workshop.svg';
 
 export default {
   name: "Sidebar",
+  components: {
+    WorkshopIcon
+  },
   props: {
     expandOnHover: {
       type: Boolean,
@@ -61,37 +63,15 @@ export default {
       {
         title: "Dashboard",
         icon: "mdi-view-dashboard",
+        iconComponent: 'v-icon', // default icon component for vuetify icons
         to: "/dashboard/basic-dashboard"
       },
       {
         title: "Workshop Module",
         icon: "mdi-view-dashboard",
+        iconComponent: 'WorkshopIcon', // custom component for SVG icon
         to: "/dashboard/basic-dashboard"
-      },
-
-      // {
-      //   title: "Profile",
-      //   icon: "mdi-account-circle",
-      //   to: "/pages/profile"
-      // },
-
-      // {
-      //   title: "Alerts",
-      //   icon: "mdi-alert",
-      //   to: "/pages/alerts"
-      // },
-
-      // {
-      //   title: "Icons",
-      //   icon: "mdi-emoticon",
-      //   to: "/pages/icons"
-      // },
-
-      // {
-      //   title: "Basic Table",
-      //   icon: "mdi-table-column-width",
-      //   to: "/pages/tables-simple"
-      // }
+      }
     ]
   }),
   computed: {
@@ -114,25 +94,24 @@ export default {
   methods: {}
 };
 </script>
+
 <style lang="scss">
-#main-sidebar{
-  box-shadow:1px 0 20px rgba(0,0,0,.08);
-  -webkit-box-shadow:1px 0 20px rgba(0,0,0,.08);
-  .v-navigation-drawer__border{
+#main-sidebar {
+  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+  .v-navigation-drawer__border {
     display: none;
   }
-  .v-list{
+  .v-list {
     padding: 8px 15px;
   }
-  .v-list-item{
-      &__icon--text,
-      &__icon:first-child{
-        justify-content: center;
-        text-align: center;
-        width: 20px;
-        
-      }
-      
-  }    
+  .v-list-item {
+    &__icon--text,
+    &__icon:first-child {
+      justify-content: center;
+      text-align: center;
+      width: 20px;
+    }
+  }
 }
 </style>
