@@ -5,6 +5,10 @@ import router from './router'
 import store from './store'
 import './plugins/base'
 
+import TableActionMenu from '@/components/commonComponents/TableActionMenu.vue';
+
+
+Vue.component("table-action-menu", TableActionMenu);
 
 Vue.config.productionTip = false
 

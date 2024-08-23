@@ -45,6 +45,12 @@ export default new Router({
 
             ]
         },
+        {
+            path: '/workshop',
+            name: 'workshop',
+            component: () => import('@/views/pages/Workshop.vue'),
 
-    ],
+        }
+
+    ], 
 })
