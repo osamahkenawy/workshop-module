@@ -42,15 +42,13 @@ export default new Router({
                     path: 'dashboard/basic-dashboard',
                     component: () => import('@/views/dashboard/BasicDashboard'),
                 },
+                {
+                    path: '/workshop',
+                    name: 'workshop',
+                    component: () => import('@/views/pages/Workshop.vue'),
+                }
 
             ]
         },
-        {
-            path: '/workshop',
-            name: 'workshop',
-            component: () => import('@/views/pages/Workshop.vue'),
-
-        }
-
     ], 
 })

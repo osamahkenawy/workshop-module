@@ -20,7 +20,9 @@
 
         <v-list-item-content>
           <v-list-item-title>Osamah Kenawy</v-list-item-title>
-          <v-list-item-subtitle class="caption">Software Developer</v-list-item-subtitle>
+          <v-list-item-subtitle class="caption"
+            >Software Developer</v-list-item-subtitle
+          >
         </v-list-item-content>
       </v-list-item>
       <v-list-item
@@ -45,34 +47,34 @@
 
 <script>
 import { mapState } from "vuex";
-import WorkshopIcon from '@/assets/modules/workshop.svg';
+import WorkshopIcon from "@/assets/modules/workshop.svg";
 
 export default {
   name: "Sidebar",
   components: {
-    WorkshopIcon
+    WorkshopIcon,
   },
   props: {
     expandOnHover: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   data: () => ({
     items: [
       {
         title: "Dashboard",
         icon: "mdi-view-dashboard",
-        iconComponent: 'v-icon', // default icon component for vuetify icons
-        to: "/dashboard/basic-dashboard"
+        iconComponent: "v-icon", // default icon component for vuetify icons
+        to: "/dashboard/basic-dashboard",
       },
       {
         title: "Workshop Module",
         icon: "mdi-view-dashboard",
-        iconComponent: 'WorkshopIcon', // custom component for SVG icon
-        to: "/dashboard/basic-dashboard"
-      }
-    ]
+        iconComponent: "WorkshopIcon", // custom component for SVG icon
+        to: "/workshop",
+      },
+    ],
   }),
   computed: {
     ...mapState(["SidebarColor", "SidebarBg"]),
@@ -82,16 +84,16 @@ export default {
       },
       set(val) {
         this.$store.commit("SET_SIDEBAR_DRAWER", val);
-      }
-    }
+      },
+    },
   },
   watch: {
     "$vuetify.breakpoint.smAndDown"(val) {
       this.$emit("update:expandOnHover", !val);
-    }
+    },
   },
 
-  methods: {}
+  methods: {},
 };
 </script>
 

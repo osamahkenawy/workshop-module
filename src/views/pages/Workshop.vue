@@ -1,15 +1,18 @@
 <template>
     <div>
-            Workshop Module
-            <table-action-menu  />
-    </div>
+        
+        <vehicle-plate :plateNumber="'AD-10-1234'" plateColor="#B40808FF" />
+    </div> 
 </template>
 
 <script>
     export default {
         name: 'workshop',
-        computed(){
-            
+  
+        data(){
+            return {
+                breadcrumbs: [ { "title": "Home", "link": "tpc-portal/dashboard", "active": true }, { "title": "Workshop", "link": "tpc-portal/workshop", "active": true }, { "title": "List", "link": "tpc-portal/workshop", "active": false } ]
+            }
         }
     }
 </script>
