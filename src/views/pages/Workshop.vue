@@ -1,7 +1,6 @@
 <template>
     <div>
-        
-        <vehicle-plate :plateNumber="'AD-10-1234'" plateColor="#B40808FF" />
+            <oman-plate :size="10"></oman-plate>
     </div> 
 </template>
 

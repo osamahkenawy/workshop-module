@@ -69,10 +69,10 @@ export default {
         to: "/dashboard/basic-dashboard",
       },
       {
-        title: "Workshop Module",
+        title: "Vehicle Plates",
         icon: "mdi-view-dashboard",
         iconComponent: "WorkshopIcon", // custom component for SVG icon
-        to: "/workshop",
+        to: "/vehicle-plate",
       },
     ],
   }),

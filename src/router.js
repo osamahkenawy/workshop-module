@@ -43,8 +43,8 @@ export default new Router({
                     component: () => import('@/views/dashboard/BasicDashboard'),
                 },
                 {
-                    path: '/workshop',
-                    name: 'workshop',
+                    path: '/vehicle-plate',
+                    name: 'vehicle-plate',
                     component: () => import('@/views/pages/Workshop.vue'),
                 }
 
