@@ -1,6 +1,8 @@
 <template>
     <div>
-        <Sidebar />
+        <Sidebar>
+            <span>Event Details</span>
+        </Sidebar>
     </div>
 </template>
 
@@ -16,17 +18,4 @@
 
 <style lang="scss" scoped>
 
-</style>
-
-<style lang="scss" scoped>
-/* Using your shared color variables */
-div {
-  background-color: var(--primary-color);
-  color: var(--default-color);
-}
-
-.custom-btn {
-  background-color: var(--accent-color);
-  color: white;
-}
 </style>

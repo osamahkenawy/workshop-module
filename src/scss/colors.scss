@@ -6,8 +6,11 @@ $info-color: #1e88e5;
 $success-color: #41c7db;
 $accent-color: #fc4b6c;
 $default-color: #563dea;
-
+$white-color: #FFFFFF;
 $osama-color: #ff00d9;
+
+$acitve-icon: #2097F3;
+$non-active-icon: #04092152;
 
 // CSS Variables
 :root {
@@ -17,4 +20,7 @@ $osama-color: #ff00d9;
   --accent-color: #fc4b6c;
   --default-color: #563dea;
   --osama-color: #ff00d9;
+  --white-color: #FFFFFF;
+  --acitve-icon: #2097F3;
+  --non-active-icon: #04092152;
 }
