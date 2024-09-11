@@ -42,10 +42,22 @@ export default new Router({
                     path: 'dashboard/basic-dashboard',
                     component: () => import('@/views/dashboard/BasicDashboard'),
                 },
+                
                 {
                     path: '/vehicle-plate',
                     name: 'vehicle-plate',
                     component: () => import('@/views/pages/Workshop.vue'),
+                },
+
+                {
+                    path: '/file-upload',
+                    name: 'file-upload',
+                    component: () => import('@/views/pages/FileUpload/Index.vue'),
+                },
+                {
+                    path: '/live-map',
+                    name: 'live-map',
+                    component: () => import('@/views/pages/Livemap/Index.vue'),
                 }
 
             ]

@@ -74,6 +74,11 @@ export default {
         iconComponent: "WorkshopIcon", // custom component for SVG icon
         to: "/vehicle-plate",
       },
+      {
+        title: "File Upload",
+        icon: "mdi-cloud-upload",
+        to: "/file-upload",
+      },
     ],
   }),
   computed: {
