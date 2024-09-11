@@ -1,15 +1,17 @@
 <template>
     <div>
-            Workshop Module
-            <table-action-menu  />
-    </div>
+            <oman-plate :size="10"></oman-plate>
+    </div> 
 </template>
 
 <script>
     export default {
         name: 'workshop',
-        computed(){
-            
+  
+        data(){
+            return {
+                breadcrumbs: [ { "title": "Home", "link": "tpc-portal/dashboard", "active": true }, { "title": "Workshop", "link": "tpc-portal/workshop", "active": true }, { "title": "List", "link": "tpc-portal/workshop", "active": false } ]
+            }
         }
     }
 </script>

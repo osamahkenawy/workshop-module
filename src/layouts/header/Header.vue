@@ -6,7 +6,7 @@
     />
     <v-spacer />
     <!---right part -->
-    <v-btn dark color="success" class="text-capitalize">Workshop Module</v-btn>
+    <v-btn dark color="success" class="text-capitalize">Fleet Wiot360</v-btn>
     
   </v-app-bar>
 </template>

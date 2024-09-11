@@ -6,9 +6,16 @@ import store from './store'
 import './plugins/base'
 
 import TableActionMenu from '@/components/commonComponents/TableActionMenu.vue';
+import Breadcrumbs from '@/components/commonComponents/Breadcrumbs.vue';
+import VehiclePlate from '@/components/commonComponents/VehiclePlate.vue';
 
+// Plates
+import OmanPlate from '@/components/commonComponents/Plates/OmanPlate.vue'
 
-Vue.component("table-action-menu", TableActionMenu);
+Vue.component("table-action-menu", TableActionMenu);   // Edit Action Menu
+Vue.component("breadcrumbs", Breadcrumbs); // Breadcrumbs
+Vue.component("vehicle-plate", VehiclePlate); // VehiclePlate
+Vue.component("oman-plate", OmanPlate); // VehiclePlate
 
 Vue.config.productionTip = false
 
