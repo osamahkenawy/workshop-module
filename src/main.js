@@ -11,11 +11,14 @@ import VehiclePlate from '@/components/commonComponents/VehiclePlate.vue';
 
 // Plates
 import OmanPlate from '@/components/commonComponents/Plates/OmanPlate.vue'
+import SubSidebar from "@/components/commonComponents/Sidebars/SubSidebar.vue";
 
 Vue.component("table-action-menu", TableActionMenu);   // Edit Action Menu
 Vue.component("breadcrumbs", Breadcrumbs); // Breadcrumbs
 Vue.component("vehicle-plate", VehiclePlate); // VehiclePlate
 Vue.component("oman-plate", OmanPlate); // VehiclePlate
+
+Vue.component('sub-sidebar', SubSidebar); // SubSidebar
 
 Vue.config.productionTip = false
 
