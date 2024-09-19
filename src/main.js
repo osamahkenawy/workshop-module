@@ -12,6 +12,7 @@ import VehiclePlate from '@/components/commonComponents/VehiclePlate.vue';
 // Plates
 import OmanPlate from '@/components/commonComponents/Plates/OmanPlate.vue'
 import SubSidebar from "@/components/commonComponents/Sidebars/SubSidebar.vue";
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 Vue.component("table-action-menu", TableActionMenu);   // Edit Action Menu
 Vue.component("breadcrumbs", Breadcrumbs); // Breadcrumbs
