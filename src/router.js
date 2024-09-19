@@ -58,6 +58,11 @@ export default new Router({
                     path: '/live-map',
                     name: 'live-map',
                     component: () => import('@/views/pages/Livemap/Index.vue'),
+                },
+                {
+                    path: '/profile',
+                    name: 'profile',
+                    component: () => import('@/views/pages/Profile/Index.vue'),
                 }
 
             ]

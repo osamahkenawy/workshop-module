@@ -1,8 +1,11 @@
 <template>
-    <div>
+    <div class="d-flex">
         <sub-sidebar>
             <span>Event Details</span>
         </sub-sidebar>
+        <div>
+            Osamaaa 
+        </div>
     </div>
 </template>
 
